@@ -138,7 +138,7 @@ class LanceurAlerte:
     if self.printer:
       print("distance: ", distance)
       print("distance couleur: ", distance_couleur)
-    if distance < 70 and distance_couleur < 0.2:
+    if distance < 40 and distance_couleur < 0.2:
       self.listeEntite[index].frame_immobile += 1
     else:
       self.listeEntite[index].frame_immobile = 0
@@ -188,7 +188,7 @@ class LanceurAlerte:
   def analyse_liste(self):
     if self.printer: print("\nanalyse de la liste d'entite ...")
     for entite in self.listeEntite:
-      if entite.frame_immobile >= 20:
+      if entite.frame_immobile >= 60:
         entite.abandon = True
         print("------------------------------------------------------------------------------------------------------------------------------------------------------------")
         print("/!\/!\/!\/!\/!\   ALERTE ABANDON    /!\/!\/!\/!\/!\ ")
