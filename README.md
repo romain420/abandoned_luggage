@@ -4,6 +4,11 @@ Detection of abandoned luggage in complex environment
 How to install and use our abandonned luggage detector:
 
 - first of all, download from our github (https://github.com/romain420/abandoned_luggage) and extract the archive, or clone the project.
+- Go into the project file with comamnd : 
+```bash
+cd abandoned_luggage
+```
+- After that you should download the model [best.pt](https://perso.esiee.fr/~gueurett/project_e4/best.pt) and place it in the project root.
 - (OPTIONAL), create a new environement
 - then, from a powershell (windows) or a terminal (linux):
 ```bash
